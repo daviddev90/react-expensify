@@ -9,10 +9,10 @@ const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     <Link to={`edit/${id}`}>
       <h3>{description}</h3>
     </Link>
-    <p>{amount} - {createdAt}</p>
+    <p>
+      {amount} - {createdAt}
+    </p>
   </div>
 );
-
-
 
 export default ExpenseListItem; //dispatch에 접근할 수 있게 됨
